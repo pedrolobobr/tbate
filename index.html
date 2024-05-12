@@ -6,162 +6,126 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <style>
-        .header {
-            overflow: hidden;
-            background-color: #f1f1f1;
-            padding: 20px 10px;
-        }
-
-        /* Style the header links */
-        .header a {
-            float: left;
-            color: black;
-            text-align: center;
-            padding: 12px;
-            text-decoration: none;
-            font-size: 18px;
-            line-height: 25px;
-            border-radius: 4px;
-        }
-
-        /* Style the logo link (notice that we set the same value of line-height and font-size to prevent the header to increase when the font gets bigger */
-        .header a.logo {
-            font-size: 25px;
-            font-weight: bold;
-        }
-
-        /* Change the background color on mouse-over */
-        .header a:hover {
-            background-color: #ddd;
-            color: black;
-        }
-
-        /* Style the active/current link*/
-        .header a.active {
-            background-color: dodgerblue;
-            color: white;
-        }
-
-        /* Float the link section to the right */
-        .header-right {
-            float: right;
-        }
-
+      
         body {
+            margin: 0;
             background-color: #222222;
-            color: white;
+            color: #0a0c10;
 
         }
-
-        .box {
+        .box-chapter{
             display: grid;
             place-items: center;
-            flex-direction:column
         }
-        button{
-         background-color: aqua
-           
-        };
-        button.hover{
-            background-color: black
-        };
-        ;
+        /* BUTAO */
+        .button-54 {
+        font-family: "Open Sans", sans-serif;
+        font-size: 16px;
+        letter-spacing: 2px;
+        text-decoration: none;
+        text-transform: uppercase;
+        color: white;
+        cursor: pointer;
+        user-select: none;
+        background-color: #0a0c10;
+        }
+        @media (min-width: 768px) {
+        .button-54 {
+            padding: 1.25em 5.75em;
+            margin: 10px;
+            border-radius: 19px;
+        }
+        }
     </style>
+
 </head>
 
 <body>
-    <div class="header">
-        <a href="#main" class="logo">CompanyLogo</a>
-        <div class="header-right">
-            <a class="active" href="#home">Home</a>
-            <a href="#contact">Contact</a>
-            <a href="#about">About</a>
-        </div>
-    </div>
+
 
     <div class="box">
         <div class="box-chapter">
-            <a href="capitulos/400.html"> <button>Capítulo 400</button></a>
-            <a href="capitulos/401.html"> <button>Capítulo 401</button></a>
-            <a href="capitulos/402.html"> <button>Capítulo 402</button></a>
-            <a href="capitulos/403.html"> <button>Capítulo 403</button></a>
-            <a href="capitulos/404.html"> <button>Capítulo 404</button></a>
-            <a href="capitulos/405.html"> <button>Capítulo 405</button></a>
-            <a href="capitulos/406.html"> <button>Capítulo 406</button></a>
-            <a href="capitulos/407.html"> <button>Capítulo 407</button></a>
-            <a href="capitulos/408.html"> <button>Capítulo 408</button></a>
-            <a href="capitulos/409.html"> <button>Capítulo 409</button></a>
-            <a href="capitulos/410.html"> <button>Capítulo 410</button></a>
-            <a href="capitulos/411.html"> <button>Capítulo 411</button></a>
-            <a href="capitulos/412.html"> <button>Capítulo 412</button></a>
-            <a href="capitulos/413.html"> <button>Capítulo 413</button></a>
-            <a href="capitulos/414.html"> <button>Capítulo 414</button></a>
-            <a href="capitulos/415.html"> <button>Capítulo 415</button></a>
-            <a href="capitulos/416.html"> <button>Capítulo 416</button></a>
-            <a href="capitulos/417.html"> <button>Capítulo 417</button></a>
-            <a href="capitulos/418.html"> <button>Capítulo 418</button></a>
-            <a href="capitulos/419.html"> <button>Capítulo 419</button></a>
-            <a href="capitulos/420.html"> <button>Capítulo 420</button></a>
-            <a href="capitulos/421.html"> <button>Capítulo 421</button></a>
-            <a href="capitulos/422.html"> <button>Capítulo 422</button></a>
-            <a href="capitulos/423.html"> <button>Capítulo 423</button></a>
-            <a href="capitulos/424.html"> <button>Capítulo 424</button></a>
-            <a href="capitulos/425.html"> <button>Capítulo 425</button></a>
-            <a href="capitulos/426.html"> <button>Capítulo 426</button></a>
-            <a href="capitulos/427.html"> <button>Capítulo 427</button></a>
-            <a href="capitulos/428.html"> <button>Capítulo 428</button></a>
-            <a href="capitulos/429.html"> <button>Capítulo 429</button></a>
-            <a href="capitulos/430.html"> <button>Capítulo 430</button></a>
-            <a href="capitulos/431.html"> <button>Capítulo 431</button></a>
-            <a href="capitulos/432.html"> <button>Capítulo 432</button></a>
-            <a href="capitulos/433.html"> <button>Capítulo 433</button></a>
-            <a href="capitulos/434.html"> <button>Capítulo 434</button></a>
-            <a href="capitulos/435.html"> <button>Capítulo 435</button></a>
-            <a href="capitulos/436.html"> <button>Capítulo 436</button></a>
-            <a href="capitulos/437.html"> <button>Capítulo 437</button></a>
-            <a href="capitulos/438.html"> <button>Capítulo 438</button></a>
-            <a href="capitulos/439.html"> <button>Capítulo 439</button></a>
-            <a href="capitulos/440.html"> <button>Capítulo 440</button></a>
-            <a href="capitulos/441.html"> <button>Capítulo 441</button></a>
-            <a href="capitulos/442.html"> <button>Capítulo 442</button></a>
-            <a href="capitulos/443.html"> <button>Capítulo 443</button></a>
-            <a href="capitulos/444.html"> <button>Capítulo 444</button></a>
-            <a href="capitulos/445.html"> <button>Capítulo 445</button></a>
-            <a href="capitulos/446.html"> <button>Capítulo 446</button></a>
-            <a href="capitulos/447.html"> <button>Capítulo 447</button></a>
-            <a href="capitulos/448.html"> <button>Capítulo 448</button></a>
-            <a href="capitulos/449.html"> <button>Capítulo 449</button></a>
-            <a href="capitulos/450.html"> <button>Capítulo 450</button></a>
-            <a href="capitulos/451.html"> <button>Capítulo 451</button></a>
-            <a href="capitulos/452.html"> <button>Capítulo 452</button></a>
-            <a href="capitulos/453.html"> <button>Capítulo 453</button></a>
-            <a href="capitulos/454.html"> <button>Capítulo 454</button></a>
-            <a href="capitulos/455.html"> <button>Capítulo 455</button></a>
-            <a href="capitulos/456.html"> <button>Capítulo 456</button></a>
-            <a href="capitulos/457.html"> <button>Capítulo 457</button></a>
-            <a href="capitulos/458.html"> <button>Capítulo 458</button></a>
-            <a href="capitulos/459.html"> <button>Capítulo 459</button></a>
-            <a href="capitulos/460.html"> <button>Capítulo 460</button></a>
-            <a href="capitulos/461.html"> <button>Capítulo 461</button></a>
-            <a href="capitulos/462.html"> <button>Capítulo 462</button></a>
-            <a href="capitulos/463.html"> <button>Capítulo 463</button></a>
-            <a href="capitulos/464.html"> <button>Capítulo 464</button></a>
-            <a href="capitulos/465.html"> <button>Capítulo 465</button></a>
-            <a href="capitulos/466.html"> <button>Capítulo 466</button></a>
-            <a href="capitulos/467.html"> <button>Capítulo 467</button></a>
-            <a href="capitulos/468.html"> <button>Capítulo 468</button></a>
-            <a href="capitulos/469.html"> <button>Capítulo 469</button></a>
-            <a href="capitulos/470.html"> <button>Capítulo 470</button></a>
-            <a href="capitulos/471.html"> <button>Capítulo 471</button></a>
-            <a href="capitulos/472.html"> <button>Capítulo 472</button></a>
-            <a href="capitulos/473.html"> <button>Capítulo 473</button></a>
-            <a href="capitulos/474.html"> <button>Capítulo 474</button></a>
-            <a href="capitulos/475.html"> <button>Capítulo 475</button></a>
-            <a href="capitulos/476.html"> <button>Capítulo 476</button></a>
-            <a href="capitulos/477.html"> <button>Capítulo 477</button></a>
-            <a href="capitulos/478.html"> <button>Capítulo 478</button></a>
-            <a href="capitulos/479.html"> <button>Capítulo 479</button></a>
-            <a href="capitulos/480.html"> <button>Capítulo 480</button></a>
+            <a href="capitulos/400.html"> <button class="button-54" role="button">Capítulo 400</button></a>
+            <a href="capitulos/401.html"> <button class="button-54" role="button">Capítulo 401</button></a>
+            <a href="capitulos/402.html"> <button class="button-54" role="button">Capítulo 402</button></a>
+            <a href="capitulos/403.html"> <button class="button-54" role="button">Capítulo 403</button></a>
+            <a href="capitulos/404.html"> <button class="button-54" role="button">Capítulo 404</button></a>
+            <a href="capitulos/405.html"> <button class="button-54" role="button">Capítulo 405</button></a>
+            <a href="capitulos/406.html"> <button class="button-54" role="button">Capítulo 406</button></a>
+            <a href="capitulos/407.html"> <button class="button-54" role="button">Capítulo 407</button></a>
+            <a href="capitulos/408.html"> <button class="button-54" role="button">Capítulo 408</button></a>
+            <a href="capitulos/409.html"> <button class="button-54" role="button">Capítulo 409</button></a>
+            <a href="capitulos/410.html"> <button class="button-54" role="button">Capítulo 410</button></a>
+            <a href="capitulos/411.html"> <button class="button-54" role="button">Capítulo 411</button></a>
+            <a href="capitulos/412.html"> <button class="button-54" role="button">Capítulo 412</button></a>
+            <a href="capitulos/413.html"> <button class="button-54" role="button">Capítulo 413</button></a>
+            <a href="capitulos/414.html"> <button class="button-54" role="button">Capítulo 414</button></a>
+            <a href="capitulos/415.html"> <button class="button-54" role="button">Capítulo 415</button></a>
+            <a href="capitulos/416.html"> <button class="button-54" role="button">Capítulo 416</button></a>
+            <a href="capitulos/417.html"> <button class="button-54" role="button">Capítulo 417</button></a>
+            <a href="capitulos/418.html"> <button class="button-54" role="button">Capítulo 418</button></a>
+            <a href="capitulos/419.html"> <button class="button-54" role="button">Capítulo 419</button></a>
+            <a href="capitulos/420.html"> <button class="button-54" role="button">Capítulo 420</button></a>
+            <a href="capitulos/421.html"> <button class="button-54" role="button">Capítulo 421</button></a>
+            <a href="capitulos/422.html"> <button class="button-54" role="button">Capítulo 422</button></a>
+            <a href="capitulos/423.html"> <button class="button-54" role="button">Capítulo 423</button></a>
+            <a href="capitulos/424.html"> <button class="button-54" role="button">Capítulo 424</button></a>
+            <a href="capitulos/425.html"> <button class="button-54" role="button">Capítulo 425</button></a>
+            <a href="capitulos/426.html"> <button class="button-54" role="button">Capítulo 426</button></a>
+            <a href="capitulos/427.html"> <button class="button-54" role="button">Capítulo 427</button></a>
+            <a href="capitulos/428.html"> <button class="button-54" role="button">Capítulo 428</button></a>
+            <a href="capitulos/429.html"> <button class="button-54" role="button">Capítulo 429</button></a>
+            <a href="capitulos/430.html"> <button class="button-54" role="button">Capítulo 430</button></a>
+            <a href="capitulos/431.html"> <button class="button-54" role="button">Capítulo 431</button></a>
+            <a href="capitulos/432.html"> <button class="button-54" role="button">Capítulo 432</button></a>
+            <a href="capitulos/433.html"> <button class="button-54" role="button">Capítulo 433</button></a>
+            <a href="capitulos/434.html"> <button class="button-54" role="button">Capítulo 434</button></a>
+            <a href="capitulos/435.html"> <button class="button-54" role="button">Capítulo 435</button></a>
+            <a href="capitulos/436.html"> <button class="button-54" role="button">Capítulo 436</button></a>
+            <a href="capitulos/437.html"> <button class="button-54" role="button">Capítulo 437</button></a>
+            <a href="capitulos/438.html"> <button class="button-54" role="button">Capítulo 438</button></a>
+            <a href="capitulos/439.html"> <button class="button-54" role="button">Capítulo 439</button></a>
+            <a href="capitulos/440.html"> <button class="button-54" role="button">Capítulo 440</button></a>
+            <a href="capitulos/441.html"> <button class="button-54" role="button">Capítulo 441</button></a>
+            <a href="capitulos/442.html"> <button class="button-54" role="button">Capítulo 442</button></a>
+            <a href="capitulos/443.html"> <button class="button-54" role="button">Capítulo 443</button></a>
+            <a href="capitulos/444.html"> <button class="button-54" role="button">Capítulo 444</button></a>
+            <a href="capitulos/445.html"> <button class="button-54" role="button">Capítulo 445</button></a>
+            <a href="capitulos/446.html"> <button class="button-54" role="button">Capítulo 446</button></a>
+            <a href="capitulos/447.html"> <button class="button-54" role="button">Capítulo 447</button></a>
+            <a href="capitulos/448.html"> <button class="button-54" role="button">Capítulo 448</button></a>
+            <a href="capitulos/449.html"> <button class="button-54" role="button">Capítulo 449</button></a>
+            <a href="capitulos/450.html"> <button class="button-54" role="button">Capítulo 450</button></a>
+            <a href="capitulos/451.html"> <button class="button-54" role="button">Capítulo 451</button></a>
+            <a href="capitulos/452.html"> <button class="button-54" role="button">Capítulo 452</button></a>
+            <a href="capitulos/453.html"> <button class="button-54" role="button">Capítulo 453</button></a>
+            <a href="capitulos/454.html"> <button class="button-54" role="button">Capítulo 454</button></a>
+            <a href="capitulos/455.html"> <button class="button-54" role="button">Capítulo 455</button></a>
+            <a href="capitulos/456.html"> <button class="button-54" role="button">Capítulo 456</button></a>
+            <a href="capitulos/457.html"> <button class="button-54" role="button">Capítulo 457</button></a>
+            <a href="capitulos/458.html"> <button class="button-54" role="button">Capítulo 458</button></a>
+            <a href="capitulos/459.html"> <button class="button-54" role="button">Capítulo 459</button></a>
+            <a href="capitulos/460.html"> <button class="button-54" role="button">Capítulo 460</button></a>
+            <a href="capitulos/461.html"> <button class="button-54" role="button">Capítulo 461</button></a>
+            <a href="capitulos/462.html"> <button class="button-54" role="button">Capítulo 462</button></a>
+            <a href="capitulos/463.html"> <button class="button-54" role="button">Capítulo 463</button></a>
+            <a href="capitulos/464.html"> <button class="button-54" role="button">Capítulo 464</button></a>
+            <a href="capitulos/465.html"> <button class="button-54" role="button">Capítulo 465</button></a>
+            <a href="capitulos/466.html"> <button class="button-54" role="button">Capítulo 466</button></a>
+            <a href="capitulos/467.html"> <button class="button-54" role="button">Capítulo 467</button></a>
+            <a href="capitulos/468.html"> <button class="button-54" role="button">Capítulo 468</button></a>
+            <a href="capitulos/469.html"> <button class="button-54" role="button">Capítulo 469</button></a>
+            <a href="capitulos/470.html"> <button class="button-54" role="button">Capítulo 470</button></a>
+            <a href="capitulos/471.html"> <button class="button-54" role="button">Capítulo 471</button></a>
+            <a href="capitulos/472.html"> <button class="button-54" role="button">Capítulo 472</button></a>
+            <a href="capitulos/473.html"> <button class="button-54" role="button">Capítulo 473</button></a>
+            <a href="capitulos/474.html"> <button class="button-54" role="button">Capítulo 474</button></a>
+            <a href="capitulos/475.html"> <button class="button-54" role="button">Capítulo 475</button></a>
+            <a href="capitulos/476.html"> <button class="button-54" role="button">Capítulo 476</button></a>
+            <a href="capitulos/477.html"> <button class="button-54" role="button">Capítulo 477</button></a>
+            <a href="capitulos/478.html"> <button class="button-54" role="button">Capítulo 478</button></a>
+            <a href="capitulos/479.html"> <button class="button-54" role="button">Capítulo 479</button></a>
+            <a href="capitulos/480.html"> <button class="button-54" role="button">Capítulo 480</button></a>
         </div>
     </div>
 
