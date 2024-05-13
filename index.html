@@ -10,16 +10,21 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
+            background-color: #f4f4f4;
         }
 
         .container {
             max-width: 600px;
             margin: 20px auto;
-            padding: 0 20px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         }
 
         h1 {
             text-align: center;
+            color: #333;
         }
 
         ul {
@@ -31,6 +36,34 @@
             padding: 10px;
             border-bottom: 1px solid #ddd;
             cursor: pointer; /* Transforma o cursor em uma mãozinha ao passar sobre os capítulos */
+            transition: background-color 0.3s ease;
+        }
+
+        li:hover {
+            background-color: #f9f9f9;
+        }
+
+        a {
+            text-decoration: none;
+            color: #333;
+        }
+
+        a:hover {
+            color: #007bff;
+        }
+
+        input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+            transition: border-color 0.3s ease;
+        }
+
+        input[type="text"]:focus {
+            border-color: #007bff;
         }
     </style>
 </head>
@@ -39,16 +72,54 @@
 <div class="container">
     <h1>Lista de Capítulos</h1>
 
+    <!-- Barra de pesquisa de capítulos -->
+    <input type="text" id="searchInput" placeholder="Pesquisar capítulos..." onkeyup="searchChapters()">
+
     <!-- Lista de capítulos -->
-    <ul>
-        <?php
-        // Loop para listar os capítulos de 400 a 480
-        for ($i = 400; $i <= 480; $i++) {
-            echo "<li><a href='capitulos/$i.html'>Capítulo $i</a></li>";
-        }
-        ?>
+    <ul id="chapterList">
     </ul>
 </div>
+
+<script>
+    // Lista de todos os capítulos
+    var allChapters = [];
+
+    // Função para gerar a lista de capítulos
+    document.addEventListener("DOMContentLoaded", function() {
+        var chapterList = document.getElementById("chapterList");
+
+        // Loop para listar os capítulos de 400 a 480
+        for (var i = 400; i <= 480; i++) {
+            allChapters.push("Capítulo " + i);
+
+            var chapterLink = document.createElement("a");
+            chapterLink.href = "capitulos/" + i + ".html";
+            chapterLink.textContent = "Capítulo " + i;
+
+            var listItem = document.createElement("li");
+            listItem.appendChild(chapterLink);
+
+            chapterList.appendChild(listItem);
+        }
+    });
+
+    // Função para pesquisar capítulos na lista
+    function searchChapters() {
+        var input, filter, ul, li, txtValue;
+        input = document.getElementById('searchInput');
+        filter = input.value.toUpperCase();
+        ul = document.getElementById("chapterList");
+        li = ul.getElementsByTagName('li');
+        for (var i = 0; i < li.length; i++) {
+            txtValue = allChapters[i];
+            if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                li[i].style.display = "";
+            } else {
+                li[i].style.display = "none";
+            }
+        }
+    }
+</script>
 
 </body>
 </html>
